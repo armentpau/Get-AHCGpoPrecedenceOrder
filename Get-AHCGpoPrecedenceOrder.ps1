@@ -54,7 +54,7 @@ function Get-AHCGpoPrecedenceOrder
 	
 	BEGIN
 	{
-		if (-not ([string]::IsNullOrEmpty($Server)))
+		if (([string]::IsNullOrEmpty($Server)))
 		{
 			if ([string]::IsNullOrEmpty($Domain))
 			{
